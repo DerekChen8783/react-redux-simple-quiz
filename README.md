@@ -41,14 +41,16 @@ This app using the Redux to manage the state. The redux store is created under t
 ### Redux Reducer
 The app has only one reducer in "src/reducer" to update the state tree, the state tree structure:
 
-quiz|
-    |isLoading  : boolen
-    |quizStart  : boolen
-    |loadFail   : boolen
-    |loadErrMsg : string
-    |quizData
-        |index    : [array of quiz id]
-        |quizHash : { index:{quiz object} }
+quiz {
+    isLoading  : boolen,
+    quizStart  : boolen,
+    loadFail   : boolen,
+    loadErrMsg : string,
+    quizData {
+        index    : [array of quiz id],
+        quizHash : { index:{quiz object} }
+    }
+}
 
 The quizHash will store key-value object, key as indxe, value as quiz objects, the quiz object as:
  {
