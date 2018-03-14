@@ -1,0 +1,14 @@
+.quizContainer {
+    max-width:500px;
+    margin:auto;
+}
+
+ul {
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+}
+
+.restartBtn {
+    margin-top: 10px;
+}
